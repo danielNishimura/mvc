@@ -10,7 +10,7 @@ class HomeController extends Controller {
     }
 
     public function fotos() {
-        echo 'Opa, Fotos';
+        $this->render('fotos');
     }
 
     public function sobre() {
