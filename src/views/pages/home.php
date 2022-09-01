@@ -16,8 +16,12 @@
       <td><?=$usuario['nome'];?></td>
       <td><?=$usuario['email'];?></td>
       <td>
-        <a href="<?=$base;?>/usuario/<?=$usuario['id'];?>/editar">[editar]</a>
-        <a href="<?=$base;?>/usuario/<?=$usuario['id'];?>/excluir">[excluir]</a>
+        <a href="<?=$base;?>/usuario/<?=$usuario['id'];?>/editar">
+          <img width="20px" src="<?=$base;?>/assets/images/file.svg" alt="icone para editar">
+        </a>
+        <a href="<?=$base;?>/usuario/<?=$usuario['id'];?>/excluir" onclick="return confirm('Tem certeza que deseja excluir?')">
+          <img width="20px" src="<?=$base;?>/assets/images/bin.svg" alt="icone para excluir registro">
+        </a>
       </td>
     </tr>
   <?php endforeach; ?>
